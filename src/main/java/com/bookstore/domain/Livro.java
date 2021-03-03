@@ -32,7 +32,7 @@ public class Livro implements Serializable {
 	
 	@NotEmpty(message = "Campo NOME DO AUTOR requerido")
 	@Length(min = 3, max = 50, message = "O campo NOME DO AUTOR deve ter entre 3 e 50 caracteres")
-	private String nomeAutor;
+	private String nome_autor;
 	
 	@NotEmpty(message = "Campo TEXTO requerido")
 	@Length(min = 10, max = 2000000, message = "O campo TEXTO deve ter entre 10 e 2.000.000 caracteres")
@@ -47,11 +47,11 @@ public class Livro implements Serializable {
 		super();
 	}
 
-	public Livro(Integer id, String titulo, String nomeAutor, String texto, Categoria categoria) {
+	public Livro(Integer id, String titulo, String nome_autor, String texto, Categoria categoria) {
 		super();
 		this.id = id;
 		this.titulo = titulo;
-		this.nomeAutor = nomeAutor;
+		this.nome_autor = nome_autor;
 		this.texto = texto;
 		this.categoria = categoria;
 	}
@@ -73,11 +73,11 @@ public class Livro implements Serializable {
 	}
 
 	public String getNomeAutor() {
-		return nomeAutor;
+		return nome_autor;
 	}
 
-	public void setNomeAutor(String nomeAutor) {
-		this.nomeAutor = nomeAutor;
+	public void setNomeAutor(String nome_autor) {
+		this.nome_autor = nome_autor;
 	}
 
 	public String getTexto() {
