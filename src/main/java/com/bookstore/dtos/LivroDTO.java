@@ -12,7 +12,7 @@ public class LivroDTO implements Serializable {
 	private static final long serialVersionUID = -7451263629345605304L;
 
 	private Integer id;
-	private String nomeLivro;
+	private String titulo;
 
 	public LivroDTO() {
 		super();
@@ -22,7 +22,7 @@ public class LivroDTO implements Serializable {
 	public LivroDTO(Livro obj) {
 		super();
 		this.id = obj.getId();
-		this.nomeLivro = obj.getTitulo();
+		this.titulo = obj.getTitulo();
 	}
 
 	public Integer getId() {
@@ -34,11 +34,11 @@ public class LivroDTO implements Serializable {
 	}
 
 	public String getNomeLivro() {
-		return nomeLivro;
+		return titulo;
 	}
 
-	public void setNomeLivro(String nomeLivro) {
-		this.nomeLivro = nomeLivro;
+	public void setNomeLivro(String titulo) {
+		this.titulo = titulo;
 	}
 
 }
