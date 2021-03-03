@@ -32,13 +32,14 @@ public class LivroDTO implements Serializable {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-
-	public String getNomeLivro() {
+	
+	public String getTitulo() {
 		return titulo;
 	}
 
-	public void setNomeLivro(String titulo) {
+	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
 
+	
 }
